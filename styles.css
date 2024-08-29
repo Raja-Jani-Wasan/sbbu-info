@@ -1,0 +1,264 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    /* background-color: #f0f4f8; */ /* Light blue background */
+    color: #333333; /* Dark gray text */
+}
+
+header {
+    background-color: #003366; /* Dark blue background */
+    color: #ffffff; /* White text color */
+    padding: 15px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff; /* White text color for links */
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-color: #f2f2f2;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    /* background-color: #f05a28; */
+    background-color: #003366;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    /* background-color: #d04e23; */
+    background-color: #002244;
+}
+
+/* Overview Section Styles */
+.overview {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.btn-secondary {
+    /* background-color: #000000; */
+    background-color: #003366;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-secondary:hover {
+    /* background-color: #333333; */
+    background-color: #002244;
+}
+
+/* Department Highlights Section */
+.department-highlights {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.department-highlights h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.department-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.department {
+    background-color: #ffffff;
+    /* background-color: #f9f9f9; */
+    flex: 0 0 48%; /* Two columns layout */
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+.department h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+.department h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.department p {
+    margin: 10px 0 0;
+}
+
+@media (max-width: 768px) {
+    .department {
+        flex: 0 0 90%; /* Single column layout on smaller screens */
+    }
+}
+
+/* News Section Styles */
+.news {
+    padding: 40px 20px;
+    background-color: #f2f2f2;
+}
+
+.news h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.news-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.news-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+
+/* Department List Styles */
+
+/* .department, .subject {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #ffffff; /* Light white background */
+} */
+/* Contact Form Styles */
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 97%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit-btn {
+    background-color: #003366;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.submit-btn:hover {
+    background-color: #002244;
+}
+.whatsapp-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.whatsapp-chat {
+    display: inline-block;
+    background-color: #25D366; /* WhatsApp green color */
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.whatsapp-chat:hover {
+    background-color: #1ebc5c; /* Slightly darker green for hover effect */
+}
+
+
+footer {
+    background-color: #003366; /* Dark blue background */
+    color: #ffffff; /* White text color */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+h3 {
+    text-align: center;
+}
+
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #003366; /* #f2f2f2 Light blue background for table headers */
+    text-align: left;
+    color: white;
+}

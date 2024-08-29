@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to SBBU SBA-Info</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="model.css">
+</head>
+<body>
+    <header>
+        <div class="logo">SBBU SBA-Info</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="departments.html">Departments</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Welcome to <br>SBBU SBA-Info</h1>
+            <p>Your ultimate guide to all things related to SBBU SBA University. Discover departments, admissions, and more.</p>
+            <a href="about.html" class="btn-primary">Learn More About Us</a>
+        </section>
+
+        <!-- University Overview Section -->
+        <section class="overview">
+            <h2>About Website</h2>
+            <p>This website is not affiliated with any official university or its official website. It has been created by a student solely for informational purposes to help new students understand the available academic opportunities.</p>
+            <a href="about.html" class="btn-secondary">Read More</a>
+        </section>
+
+        <!-- Department Highlights Section -->
+        <section class="department-highlights">
+            <h2>Explore Our Departments</h2>
+            <div class="department-list">
+                <div class="department">
+                    <h3>Information Technology</h3>
+                    <p>The Information Technology department focuses on modern computing and information systems, preparing students for careers in technology and software development.</p>
+                    <a href="departments.html" class="btn-secondary">View All Departments</a>
+                </div>
+                <div class="department">
+                    <h3>Computer Science</h3>
+                    <p>The Computer Science department offers courses in programming, algorithms, data structures, and artificial intelligence, fostering innovation and research in technology.</p>
+                    <a href="departments.html" class="btn-secondary">View All Departments</a>
+                </div>
+                <div class="department">
+                    <h3>English</h3>
+                    <p>The English department provides comprehensive studies in literature, linguistics, and writing, enhancing students' analytical and communication skills.</p>
+                    <a href="departments.html" class="btn-secondary">View All Departments</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest News Section -->
+        <!-- <section class="news">
+            <h2>Latest News & Announcements</h2>
+            <div class="news-item">
+                <h3>Admissions Open for 2025</h3>
+                <p>Admissions are now open for the 2025 academic year. Visit our admissions page to apply now!</p>
+                <a href="https://admissions.sbbusba.edu.pk/sign-up.php" class="btn-secondary">Apply Now</a>
+            </div> -->
+            <!-- <div class="news-item">
+                <h3>Upcoming Events</h3>
+                <p>Join us for our annual cultural fest and other exciting events. Stay tuned for more details.</p>
+                <a href="#" class="btn-secondary">Learn More</a>
+            </div> -->
+        </section>
+    </main>
+    
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2><b>Welcome!</b></h2>
+            </div>
+            <div class="modal-body">
+                <!-- Custom message for the alert box -->
+                <p>This website is not affiliated with any university or its website. It has been created for informational purposes only.<br><b>Thank You</b></p><hr>
+                <p>یہ ویب سائٹ کسی بھی یونیورسٹی یا اس کی ویب سائٹ سے وابستہ نہیں ہے۔ یہ صرف معلوماتی مقاصد کے لیے بنائی گئی ہے۔ <br><b>شکریہ</b></p>
+                <hr>
+                <p>هي ويب سائيٽ ڪنهن به يونيورسٽي يا ان جي ويب سائيٽ سان لاڳاپيل ناهي. اها صرف معلوماتي مقصدن لاءِ ٺاهي وئي آهي۔<br><b>مهرباني</b></p>
+            </div>
+            <div class="modal-footer">
+                <button id="closeBtn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle the modal
+        window.onload = function() {
+            var modal = document.getElementById("myModal");
+            var span = document.getElementsByClassName("close")[0];
+            var closeBtn = document.getElementById("closeBtn");
+
+            // Show the modal
+            modal.style.display = "block";
+
+            // Close the modal when the user clicks on <span> (x) or Close button
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            closeBtn.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // Close the modal when the user clicks anywhere outside of the modal
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        };
+    </script>
+
+    <footer>
+        <p>&copy; 2024 SBBU-Info. All rights reserved.</p>
+    </footer>
+    <!-- Link to the external JavaScript files -->
+    <script src="dcmd.js"></script>
+    <script src="dc.js"></script>
+    <script src="dcc.js"></script>
+    <script src="drc.js"></script>
+    <script src="mct.js"></script>
+    <script src="long-press-dis.js"></script>
+    <!-- JavaScript for collapsing navigation -->   
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SBBU SBA - Info...</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="model.css">
+    <style>
+        .team-member {
+            display: inline-block;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .team-member img {
+            border-radius: 50%; /* Round profile pictures */
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border: 3px solid #003366; /* Border color for profile pictures */
+        }
+
+        .team-member h3 {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #003366; /* Dark blue color for names */
+        }
+
+        .team-member p {
+            font-size: 16px;
+            color: #666; /* Slightly lighter text color for descriptions */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">SBBU SBA-Info</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="departments.html">Departments</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- <section id="about">
+            <h1>About Our University</h1>
+            <p>Established in 2012, our university has quickly become a leading institution in higher education. We offer a diverse range of programs through our 13 departments, providing students with a comprehensive education across various fields of study.</p> -->
+
+            <!-- <p>The campus is equipped with modern facilities including 2 academic blocks, an administration block, a well-stocked library, and 3 cafeterias. We pride ourselves on creating a supportive and conducive learning environment. Our university also features separate hostels for girls and boys, ensuring a comfortable stay for all our students.</p> -->
+
+            <h2>Meet Our Team</h2>
+            <div class="team-member">
+                <!-- <img src="#" alt="Team Member 1"> -->
+                <h3>Raja Jani</h3>
+                <p>SBBU Preparation - Group Owner + Founder & CEO of this Website</p>
+            </div>
+<br>
+            <div class="team-member">
+                <!-- <img src="path/to/profile-pic2.jpg" alt="Team Member 2"> -->
+                <h3>Shumail Ali</h3>
+                <p>SBBU - Group AdMiN</p>
+            </div>
+
+            <div class="team-member">
+                <!-- <img src="path/to/profile-pic3.jpg" alt="Team Member 3"> -->
+                <h3>Nadir Ali</h3>
+                <p>SBBU - Group AdMiN</p>
+            </div>
+
+            <!-- Add more team members as needed -->
+        </section>
+                       
+        <!-- <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need more information, please feel free to contact us.</p>
+        </section> -->
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SBBU-Info. All rights reserved.</p>
+    </footer>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2><b>Welcome! Must Read This Page</b></h2>
+            </div>
+            <div class="modal-body">
+                <!-- Custom message for the alert box -->
+                <p>We are delighted to have you here. Please note that this website is a student-driven initiative designed to assist new and prospective students in understanding various aspects of university life. <b>This is not an official website of any university.</b> It is a personal project created with the intention of providing valuable information and guidance to help you navigate your academic journey.
+
+Our goal with this website is to offer a comprehensive overview of the university’s departments, entry procedures, and preparation tips. You will find detailed descriptions of the departments available, including the range of programs and courses they offer. Additionally, we have included important information about the entry test process, including what to expect and how to prepare effectively.
+
+This website aims to be a useful resource for those who are considering joining the university or are in the process of preparing for entry tests. We understand that starting university can be a daunting experience, and our objective is to ease that transition by providing clear and relevant information.
+
+While this site provides helpful insights and guidance, please remember that for official information, updates, and inquiries, you should refer to the official university channels and contact the university directly. <b>For official information, visit the <a href="https://sbbusba.edu.pk">university’s official website</a></b>. We hope this website serves as a helpful starting point in your academic journey and provides you with the information you need to make informed decisions.
+
+Thank you for visiting our website. We wish you all the best in your studies and future endeavors. If you have any questions or need further assistance, please contact us on WhatsApp..</p>
+            </div>
+            <div class="modal-footer">
+                <button id="closeBtn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle the modal
+        window.onload = function() {
+            var modal = document.getElementById("myModal");
+            var span = document.getElementsByClassName("close")[0];
+            var closeBtn = document.getElementById("closeBtn");
+
+            // Show the modal
+            modal.style.display = "block";
+
+            // Close the modal when the user clicks on <span> (x) or Close button
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            closeBtn.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // Close the modal when the user clicks anywhere outside of the modal
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        };
+    </script> 
+    <!-- Link to the external JavaScript files -->
+    <script src="dcmd.js"></script>
+    <script src="dc.js"></script>
+    <script src="dcc.js"></script>
+    <script src="drc.js"></script>
+    <script src="mct.js"></script>
+    <script src="long-press-dis.js"></script>
+    <!-- JavaScript for collapsing navigation -->   
+</body>
+</html>
